@@ -5,8 +5,12 @@ class Car{
     double gas;
 
     void show() {
-        System.out.println("車のナンバーは"+num+"です。");
-        System.out.println("ガソリンの量は"+gas+"です。");
+        System.out.println("車のナンバーは"+this.num+"です。");
+        System.out.println("ガソリンの量は"+this.gas+"です。");
+    }
+    void showCar(){
+        System.out.println("これから車の情報を表示します");
+        this.show();
     }
 }
 
@@ -18,7 +22,7 @@ public class Sample17 {
 
 //        System.out.println("車のナンバーは"+car1.num+"です。");
 //        System.out.println("ガソリンの量は"+car1.gas+"です。");
-        car1.show(); // メソッドを使用することで簡単に出力することができる
+        car1.showCar(); // メソッドを使用することで簡単に出力することができる
 
     }
 }
