@@ -4,6 +4,13 @@ class Car{
     private int num;
     private double gas;
 
+    // コンストラクタの作成
+    public Car(){
+        num = 0;
+        gas = 0.0;
+        System.out.println("車を作成しました。");
+    }
+
     public void setNumGas(int n, double g) {
         if (g > 0 && g < 1000) {
             num = n;
@@ -17,6 +24,10 @@ class Car{
     public void show() {
         System.out.println("車のナンバーは"+this.num+"です。");
         System.out.println("ガソリンの量は"+this.gas+"です。");
+    }
+    public void  setCar(int n){
+        num = n;
+        System.out.println("ナンバーを"+num+"にしました");
     }
 //    void showCar(){
 //        System.out.println("これから車の情報を表示します");
