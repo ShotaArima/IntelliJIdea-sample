@@ -10,7 +10,11 @@ class Car{
         gas = 0.0;
         System.out.println("車を作成しました。");
     }
-
+    public Car(int n, double g){
+        num = n;
+        gas = g;
+        System.out.println("ナンバーは"+num+"ガソリン量"+gas+"の車を作成しました。");
+    }
     public void setNumGas(int n, double g) {
         if (g > 0 && g < 1000) {
             num = n;
@@ -59,5 +63,7 @@ public class Sample17 {
 //        car1.setBum(5);
 //        car1.showCar();
 //        System.out.println("ナンバーは"+car1.getNum()+"です。");
+        Car car2 = new Car(4567, 10.0);
+        car2.show();
     }
 }
