@@ -1,69 +1,41 @@
 package books;
 
-class Car{
+class Car {
+    public static int sum = 0;
+
     private int num;
     private double gas;
 
-    // コンストラクタの作成
-    public Car(){
+    public Car() {
         num = 0;
         gas = 0.0;
-        System.out.println("車を作成しました。");
+        sum++; //コンストラクタが呼び出された時にクラス変数sumの値を1つ増やす
+        System.out.println("車を作成しました");
     }
-    public Car(int n, double g){
+    public void setCar(int n, double g) {
         num = n;
         gas = g;
-        System.out.println("ナンバーは"+num+"ガソリン量"+gas+"の車を作成しました。");
+        System.out.println("ナンバーを"+num+"にガソリン量を"+gas+"にしました。");
     }
-    public void setNumGas(int n, double g) {
-        if (g > 0 && g < 1000) {
-            num = n;
-            gas = g;
-            System.out.println("ナンバーを"+num+"に、ガソリン量を"+gas+"にしました");
-        } else {
-            System.out.println(g + "は正しいガソリン量ではありません。");
-            System.out.println("ガソリン量を変更できませんでした。");
-        }
+    public static void showSum() {
+        System.out.println("車は全部で"+sum+"台です。");
     }
     public void show() {
-        System.out.println("車のナンバーは"+this.num+"です。");
-        System.out.println("ガソリンの量は"+this.gas+"です。");
+        System.out.println("車のナンバーは"+num+"です。");
+        System.out.println("ガソリン量は"+gas+"です。");
     }
-    public void  setCar(int n){
-        num = n;
-        System.out.println("ナンバーを"+num+"にしました");
-    }
-//    void showCar(){
-//        System.out.println("これから車の情報を表示します");
-//        this.show();
-//    }
-//    void setBum(int n){
-//        this.num = n;
-//        System.out.println("車のナンバーを"+this.num+"にしました");
-//    }
-//    int getNum(){
-//        System.out.println("ナンバーを調べました");
-//        return this.num;
-//    }
 }
 
-public class Sample17 {
+class Sample17 {
     public static void main(String[] args) {
+        Car.showSum();
         Car car1 = new Car();
-//        このようなアクセスは不可能
-//        car1.num = 1234;
-//        car1.gas = 20.5;
-        car1.setNumGas(1234, 20.5);
-        car1.show();
-        car1.setNumGas(1234, -10.0);
-        car1.show();
-//        System.out.println("車のナンバーは"+car1.num+"です。");
-//        System.out.println("ガソリンの量は"+car1.gas+"です。");
-//        car1.showCar(); // メソッドを使用することで簡単に出力することができる
-//        car1.setBum(5);
-//        car1.showCar();
-//        System.out.println("ナンバーは"+car1.getNum()+"です。");
-        Car car2 = new Car(4567, 10.0);
-        car2.show();
+        car1.setCar(1234, 20.5);
+        Car.showSum();
+
+        Car car2 = new Car();
+        car2.setCar(4567, 30.5);
+
+        Car.showSum();
     }
 }
