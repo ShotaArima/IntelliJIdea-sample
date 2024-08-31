@@ -32,8 +32,8 @@ class Sample17 {
         cars[1].setCar(2345, 30.5);
         cars[2].setCar(3456, 40.5);
 
-        for (int i=0; i<cars.length; i++) {
-            cars[i].show();
+        for (Car car : cars) {
+            car.show();
         }
     }
 }
