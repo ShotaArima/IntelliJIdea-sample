@@ -19,21 +19,26 @@ class Car {
         System.out.println("ガソリン量は"+gas+"です");
     }
 }
+// レーシングカークラス Carクラスを継承
+class RacingCar extends Car {
+    private int course;
+
+    public RacingCar() {
+        course = 0;
+        System.out.println("レーシングカーを作成しました。");
+    }
+
+    public void setCourse(int c) {
+        course = c;
+        System.out.println("コース番号を"+course+"にしました。");
+    }
+}
+
 
 class Sample17 {
     public static void main(String[] args) {
-        Car[] cars;
-        cars = new Car[3];
-
-        for (int i=0; i<cars.length; i++) {
-            cars[i] = new Car();
-        }
-        cars[0].setCar(1234, 20.5);
-        cars[1].setCar(2345, 30.5);
-        cars[2].setCar(3456, 40.5);
-
-        for (Car car : cars) {
-            car.show();
-        }
+        RacingCar rccar1 = new RacingCar();
+        rccar1.setCar(1234, 20.5);
+        rccar1.setCourse(5);
     }
 }
