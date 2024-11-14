@@ -1,6 +1,4 @@
-package books;
-
-public class Sample6 {
+public class Sample2_4 {
     public static void main(String[] args) {
         System.out.println("10進数の10は"+10+"です。");
         System.out.println("8進数の10は"+010+"です。");

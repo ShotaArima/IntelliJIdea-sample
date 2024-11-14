@@ -1,6 +1,7 @@
-class Sample1 {
+public class Sample2_1 {
     public static void main(String[] args) {
+        System.out.println('A');
         System.out.println("ようこそJavaへ!");
-        System.out.println("Javaを始めましょう");
+        System.out.println(123);
     }
 }

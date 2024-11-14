@@ -1,4 +1,4 @@
-class Sample2 {
+class Sample3_2 {
     public static void main(String[] args) {
         int num;
 
