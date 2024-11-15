@@ -1,4 +1,4 @@
-class ample6_6 {
+class Sample6_6 {
     public static void main(String[] args) {
         int i = 1;
 
