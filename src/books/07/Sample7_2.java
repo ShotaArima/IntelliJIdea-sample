@@ -1,11 +1,11 @@
-package books;
-
 import java.io.*;
 
-public class Sample15 {
+public class Sample7_2 {
     public static void main(String[] args) throws IOException {
         System.out.println("テストの受験者数を入力してください");
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         String str = reader.readLine();
         int num = Integer.parseInt(str);
 
