@@ -1,12 +1,12 @@
-class Car1 {
+class Car8_1 {
     int num;
     double gas;
 }
 
 class Sample8_1 {
     public static void main(String[] args) {
-        Car1 car1;
-        car1 = new Car1();
+        Car8_1 car1;
+        car1 = new Car8_1();
 
         car1.num = 1234;
         car1.gas = 20.5;

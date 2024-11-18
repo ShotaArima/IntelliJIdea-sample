@@ -1,4 +1,4 @@
-class Car5 {
+class Car8_5 {
     int num;
     double gas;
 
@@ -17,7 +17,7 @@ class Car5 {
 
 class Sample8_5 {
     public static void main(String[] args) {
-        Car5 car1 = new Car5();
+        Car8_5 car1 = new Car8_5();
 
         int number = 1234;
         double gas = 20.5;
