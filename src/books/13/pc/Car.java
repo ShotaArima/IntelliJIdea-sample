@@ -1,6 +1,6 @@
 package pc;
 // 車クラス
-class Car {
+public class Car {
     private int num;
     private double gas;
 

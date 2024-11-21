@@ -1,4 +1,4 @@
-package pc;
+package pb;
 
 class Sample13_5 {
     public static void main(String[] args) {
